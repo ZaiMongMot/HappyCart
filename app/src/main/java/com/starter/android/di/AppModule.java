@@ -3,8 +3,6 @@ package com.starter.android.di;
 import android.app.Application;
 import android.content.Context;
 
-import com.google.gson.Gson;
-
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -15,7 +13,7 @@ import dagger.Provides;
  */
 
 @Singleton
-@Module(includes = {NetworkModule.class, PersistenceModule.class})
+@Module(includes ={NetworkModule.class, PersistenceModule.class, UtilModule.class})
 public class AppModule {
 
     private Application app;
@@ -26,9 +24,17 @@ public class AppModule {
 
     @Provides
     @Singleton
+    Application providesApplication(){
+        return app;
+    }
+
+    @Provides
+    @Singleton
+    @AppContext
     Context providesContext(){
         return app;
     }
+
 
 
 }

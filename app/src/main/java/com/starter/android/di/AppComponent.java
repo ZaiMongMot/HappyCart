@@ -2,6 +2,8 @@ package com.starter.android.di;
 
 import android.app.Application;
 
+import com.starter.android.App;
+
 import javax.inject.Singleton;
 
 import dagger.Component;
@@ -13,10 +15,13 @@ import dagger.Component;
 @Component(modules = AppModule.class)
 public interface AppComponent {
 
-    ContextComponent plusContextModule(ContextModule contextModule);
+    void inject(App app);
+
+    ActivityComponent plusActivityModule(ActivityModule activityModule);
+
 
     public static AppComponent component(Application app){
-        return DaggerAppComponent.builder().appModule(new AppModule(app)).networkModule(new NetworkModule()).persistenceModule(new PersistenceModule(false)).build();
+        return DaggerAppComponent.builder().appModule(new AppModule(app)).networkModule(new NetworkModule()).persistenceModule(new PersistenceModule()).build();
     }
 
 }

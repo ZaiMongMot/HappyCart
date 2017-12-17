@@ -8,8 +8,6 @@ import android.util.Log;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.backends.okhttp3.OkHttpImagePipelineConfigFactory;
 import com.starter.android.di.AppComponent;
-import com.starter.android.di.ContextComponent;
-import com.starter.android.di.ContextModule;
 import com.starter.android.util.Foreground;
 
 import java.io.IOException;
@@ -17,7 +15,7 @@ import java.io.IOException;
 import io.realm.Realm;
 import okhttp3.OkHttpClient;
 
-public class StarterApp extends MultiDexApplication{
+public class App extends MultiDexApplication{
 
     private AppComponent appComponent;
 
@@ -29,17 +27,14 @@ public class StarterApp extends MultiDexApplication{
         Realm.init(this);
 
         appComponent=AppComponent.component(this);
+        appComponent.inject(this);
+
         initForeground();
     }
 
 
-
-    public static AppComponent getAppComponent(Context context) {
-       return ((StarterApp)context.getApplicationContext()).appComponent;
-    }
-
-    public static ContextComponent getContextComponent(Context context) {
-        return ((StarterApp)context.getApplicationContext()).appComponent.plusContextModule(new ContextModule(context));
+    public static AppComponent component(Context context) {
+       return ((App)context.getApplicationContext()).appComponent;
     }
 
 

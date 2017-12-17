@@ -1,6 +1,8 @@
 package com.starter.android.di;
-import com.starter.android.data.local.LocalDataStore;
-import com.starter.android.data.local.RealmLocalStore;
+import android.content.Context;
+
+import com.starter.android.data.Prefs;
+import com.starter.android.data.local.LocalRealmDB;
 
 import javax.inject.Singleton;
 
@@ -13,19 +15,15 @@ import io.realm.RealmConfiguration;
 @Module
 public class PersistenceModule {
 
-    private final boolean isInMemory;
-
-    public PersistenceModule(boolean isInMemory) {
-        this.isInMemory = isInMemory;
+    @Provides
+    @Singleton
+    Prefs providesPrefs(@AppContext Context context){
+        return new Prefs(context);
     }
 
     @Provides
-    @Singleton
-    public RealmConfiguration providesRealmConfiguration() {
-        RealmConfiguration.Builder builder = new RealmConfiguration.Builder();
-        builder.deleteRealmIfMigrationNeeded();
-        if (isInMemory)builder.inMemory();
-        return builder.build();
+    public LocalRealmDB providesLocalRealmDB(Realm realm) {
+        return new LocalRealmDB(realm);
     }
 
     @Provides
@@ -34,8 +32,12 @@ public class PersistenceModule {
     }
 
     @Provides
-    public LocalDataStore providesLocalDataStore(Realm realm) {
-        return new RealmLocalStore(realm);
+    @Singleton
+    public RealmConfiguration providesRealmConfiguration() {
+        RealmConfiguration.Builder builder = new RealmConfiguration.Builder();
+        builder.deleteRealmIfMigrationNeeded();
+        // builder.inMemory();
+        return builder.build();
     }
 
 }

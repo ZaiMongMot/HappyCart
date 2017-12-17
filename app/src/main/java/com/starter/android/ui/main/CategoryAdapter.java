@@ -1,0 +1,64 @@
+package com.starter.android.ui.main;
+
+import android.databinding.DataBindingUtil;
+import android.databinding.ObservableList;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+
+import com.starter.android.R;
+import com.starter.android.databinding.ItemCategoryBinding;
+import com.starter.android.model.Category;
+
+
+
+public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ItemViewHolder> {
+
+    private final ObservableList<Category> dataList;
+
+    public CategoryAdapter(ObservableList<Category> dataList) {
+        this.dataList = dataList;
+    }
+
+    @Override
+    public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        ItemCategoryBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_category, parent, false);
+        return new ItemViewHolder(binding, new CategoryItemViewModel());
+    }
+
+    @Override
+    public void onBindViewHolder(ItemViewHolder holder, int position) {
+        holder.bind(dataList.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return dataList.size();
+    }
+
+
+
+    class ItemViewHolder extends RecyclerView.ViewHolder {
+
+        private final CategoryItemViewModel viewModel;
+        private final ItemCategoryBinding binding;
+
+        public ItemViewHolder(ItemCategoryBinding binding, CategoryItemViewModel viewModel) {
+            super(binding.getRoot());
+            this.viewModel = viewModel;
+            this.binding = binding;
+        }
+
+        public void bind(Category category) {
+            viewModel.setCategory(category);
+            binding.setVm(viewModel);
+            binding.executePendingBindings();
+
+            binding.btnCategory.setOnClickListener(v -> {
+                Log.e("Event", "Category Click");
+            });
+        }
+    }
+
+}

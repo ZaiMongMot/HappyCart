@@ -58,22 +58,14 @@ import static android.content.Context.CLIPBOARD_SERVICE;
 @Singleton
 public class Utils {
 
-    private final Context context;
 
-    @Inject
-    public Utils(Context context){
-        this.context=context;
-        Log.e("Event", "Util called");
-    }
-
-
-    public void showKeyboard(View view) {
-        InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+    public void showKeyboard(Context context, View view) {
+        InputMethodManager imm = (InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
         assert imm != null;
         imm.showSoftInput(view, 0);
     }
 
-    public void hideKeyboard(View view) {
+    public void hideKeyboard(Context context, View view) {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         assert imm != null;
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
@@ -84,18 +76,18 @@ public class Utils {
     }
 
 
-    public Toast showToast(CharSequence msg) {
-        return showToast(msg, Toast.LENGTH_SHORT);
+    public Toast showToast(Context context, CharSequence msg) {
+        return showToast(context, msg, Toast.LENGTH_SHORT);
     }
 
-    public Toast showToast(CharSequence msg, int duration) {
+    public Toast showToast(Context context, CharSequence msg, int duration) {
         Toast toast = Toast.makeText(context, msg, duration);
         toast.show();
         return toast;
     }
 
 
-    public boolean isInternetAvailable() {
+    public boolean isInternetAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager)context.getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         assert connectivityManager != null;
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -103,15 +95,15 @@ public class Utils {
     }
 
 
-    public void showAlertDialog(@StringRes int titleResId, @StringRes int bodyResId) {
-        showAlertDialog(context.getString(titleResId), context.getString(bodyResId), null);
+    public void showAlertDialog(Context context, @StringRes int titleResId, @StringRes int bodyResId) {
+        showAlertDialog(context, context.getString(titleResId), context.getString(bodyResId), null);
     }
 
-    public void showAlertDialog(String title, String body) {
-        showAlertDialog(title, body, null);
+    public void showAlertDialog(Context context, String title, String body) {
+        showAlertDialog(context, title, body, null);
     }
 
-    public void showAlertDialog(String title, String body, DialogInterface.OnClickListener okListener) {
+    public void showAlertDialog(Context context, String title, String body, DialogInterface.OnClickListener okListener) {
         if(okListener == null) okListener = (dialog, which) -> dialog.cancel();
         AlertDialog.Builder builder = new AlertDialog.Builder(context)
                 .setMessage(body)
@@ -125,13 +117,13 @@ public class Utils {
 
 
 
-    public void showProgressDialog(String title, String body, boolean isCancellable) {
-        showProgressDialog(title, body, null, isCancellable);
+    public void showProgressDialog(Context context, String title, String body, boolean isCancellable) {
+        showProgressDialog(context, title, body, null, isCancellable);
     }
 
 
     static ProgressDialog mProgressDialog;
-    public void showProgressDialog(String title, String body, Drawable icon, boolean isCancellable) {
+    public void showProgressDialog(Context context, String title, String body, Drawable icon, boolean isCancellable) {
 
         if (context instanceof Activity) {
             if (!((Activity)context).isFinishing()) {
@@ -152,21 +144,21 @@ public class Utils {
     }
 
 
-    public int getDip(int px) {
+    public int getDip(Context context, int px) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (px * scale + 0.5f);
     }
 
-    public int getPx(int dp) {
+    public int getPx(Context context, int dp) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics());
     }
 
 
-    public void showConfirmDialog(String message, DialogInterface.OnClickListener yesListener, DialogInterface.OnClickListener noListener) {
-        showConfirmDialog(message, yesListener, noListener, "Yes", "No");
+    public void showConfirmDialog(Context context, String message, DialogInterface.OnClickListener yesListener, DialogInterface.OnClickListener noListener) {
+        showConfirmDialog(context, message, yesListener, noListener, "Yes", "No");
     }
 
-    public void showConfirmDialog(String message, DialogInterface.OnClickListener yesListener, DialogInterface.OnClickListener noListener, String yesLabel, String noLabel) {
+    public void showConfirmDialog(Context context, String message, DialogInterface.OnClickListener yesListener, DialogInterface.OnClickListener noListener, String yesLabel, String noLabel) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         if (yesListener == null) {
@@ -239,7 +231,7 @@ public class Utils {
     }
 
 
-    public boolean isServiceRunning(Class<?> serviceClass) {
+    public boolean isServiceRunning(Context context, Class<?> serviceClass) {
         ActivityManager manager=(ActivityManager)context.getSystemService(Context.ACTIVITY_SERVICE);
         assert manager != null;
         for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
