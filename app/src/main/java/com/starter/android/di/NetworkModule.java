@@ -74,16 +74,16 @@ public class NetworkModule {
                 .retryOnConnectionFailure(false)
                 .readTimeout(READ_TIMEOUT, TimeUnit.MILLISECONDS)
                 .connectTimeout(CONNECTION_TIMEOUT, TimeUnit.MILLISECONDS)
-                .addInterceptor(chain -> {
-                    Request original = chain.request();
-                    Request request = original.newBuilder()
-                            .header("Content-type", "application/json")
-                            .header("Accept", "application/json;version=1")
-                            .method(original.method(), original.body())
-                            .build();
-
-                    return chain.proceed(request);
-                })
+//                .addInterceptor(chain -> {
+//                    Request original = chain.request();
+//                    Request request = original.newBuilder()
+//                            .header("Content-type", "application/json")
+//                            .header("Accept", "application/json;version=1")
+//                            .method(original.method(), original.body())
+//                            .build();
+//
+//                    return chain.proceed(request);
+//                })
                 .addInterceptor(logger)
                 .build();
     }

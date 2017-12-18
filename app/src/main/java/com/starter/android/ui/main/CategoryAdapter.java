@@ -3,21 +3,22 @@ package com.starter.android.ui.main;
 import android.databinding.DataBindingUtil;
 import android.databinding.ObservableList;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.starter.android.R;
 import com.starter.android.databinding.ItemCategoryBinding;
 import com.starter.android.model.Category;
-
+import com.starter.android.util.ActivityRouter;
 
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ItemViewHolder> {
 
+    private ActivityRouter router;
     private final ObservableList<Category> dataList;
 
-    public CategoryAdapter(ObservableList<Category> dataList) {
+    public CategoryAdapter(ActivityRouter router, ObservableList<Category> dataList) {
+        this.router=router;
         this.dataList = dataList;
     }
 
@@ -56,7 +57,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ItemVi
             binding.executePendingBindings();
 
             binding.btnCategory.setOnClickListener(v -> {
-                Log.e("Event", "Category Click");
+                if(getAdapterPosition()==RecyclerView.NO_POSITION)return;
+                Category cat=dataList.get(getAdapterPosition());
+                router.startProductListActivity(cat.getName());
             });
         }
     }

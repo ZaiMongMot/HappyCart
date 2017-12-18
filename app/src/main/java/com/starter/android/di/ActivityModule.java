@@ -3,12 +3,17 @@ package com.starter.android.di;
 import android.app.Activity;
 import android.content.Context;
 
+import com.starter.android.util.ActivityRouter;
+
+import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
 
 /**
  * Created by Ashutosh Verma.
  */
+@PerActivity
 @Module
 public class ActivityModule {
 
@@ -27,6 +32,11 @@ public class ActivityModule {
     @Provides
     Activity provideActivity() {
         return activity;
+    }
+
+    @Provides
+    ActivityRouter providesActivityRouter(){
+        return new ActivityRouter(activity);
     }
 
 }

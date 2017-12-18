@@ -59,6 +59,7 @@ import static android.content.Context.CLIPBOARD_SERVICE;
 public class Utils {
 
 
+
     public void showKeyboard(Context context, View view) {
         InputMethodManager imm = (InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
         assert imm != null;
@@ -73,17 +74,6 @@ public class Utils {
 
     private double degreeToRadians(double deg) {
         return deg * (Math.PI / 180);
-    }
-
-
-    public Toast showToast(Context context, CharSequence msg) {
-        return showToast(context, msg, Toast.LENGTH_SHORT);
-    }
-
-    public Toast showToast(Context context, CharSequence msg, int duration) {
-        Toast toast = Toast.makeText(context, msg, duration);
-        toast.show();
-        return toast;
     }
 
 

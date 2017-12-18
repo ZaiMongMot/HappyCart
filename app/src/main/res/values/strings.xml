@@ -2,5 +2,7 @@
     <string name="app_name">StarterApp</string>
     <string name="facebook_app_id">1699759983640689</string>
 
+    <string name="rs">₹</string>
+
 
 </resources>

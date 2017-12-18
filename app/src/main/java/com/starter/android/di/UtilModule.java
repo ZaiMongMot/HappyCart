@@ -1,7 +1,9 @@
 package com.starter.android.di;
 
-import com.starter.android.util.ActivityRouter;
+import android.content.Context;
+
 import com.starter.android.util.ImageUtil;
+import com.starter.android.util.ToastUtil;
 import com.starter.android.util.Utils;
 
 import javax.inject.Singleton;
@@ -26,14 +28,14 @@ public class UtilModule {
 
     @Provides
     @Singleton
-    ActivityRouter providesActivityRouter(){
-        return new ActivityRouter();
+    ImageUtil providesImageUtil(){
+        return new ImageUtil();
     }
 
     @Provides
     @Singleton
-    ImageUtil providesImageUtil(){
-        return new ImageUtil();
+    ToastUtil providesToastUtil(@AppContext Context context){
+        return new ToastUtil(context);
     }
 
 
