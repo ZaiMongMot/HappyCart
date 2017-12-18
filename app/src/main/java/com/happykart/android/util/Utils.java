@@ -36,7 +36,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.happykart.android.R;
-import com.happykart.android.interfaces.ClickListener;
 import com.happykart.android.ui.custom.ClickSpan;
 import com.happykart.android.ui.custom.RoundedBackgroundSpan;
 

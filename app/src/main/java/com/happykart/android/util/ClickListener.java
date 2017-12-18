@@ -1,4 +1,4 @@
-package com.happykart.android.interfaces;
+package com.happykart.android.util;
 
 /**
  * Created by Ashutosh Verma on 17-08-2016.

@@ -6,7 +6,7 @@ import android.text.TextPaint;
 import android.text.style.ClickableSpan;
 import android.view.View;
 
-import com.happykart.android.interfaces.ClickListener;
+import com.happykart.android.util.ClickListener;
 
 
 /**
