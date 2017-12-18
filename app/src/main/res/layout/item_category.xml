@@ -7,7 +7,7 @@
     <data>
         <variable
             name="vm"
-            type="com.starter.android.ui.main.CategoryItemViewModel"/>
+            type="com.happykart.android.ui.main.CategoryItemViewModel"/>
     </data>
 
     <android.support.v7.widget.CardView
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 app:viewAspectRatio="1"/>
 
-            <com.starter.android.ui.custom.CTextView
+            <com.happykart.android.ui.custom.CTextView
                 tools:text="Ashutosh Verma"
                 android:text="@{vm.category.name}"
                 android:gravity="center"

@@ -7,7 +7,7 @@
     <data>
         <variable
             name="vm"
-            type="com.starter.android.ui.productlist.ProductListViewModel"/>
+            type="com.happykart.android.ui.productlist.ProductListViewModel"/>
     </data>
 
     <RelativeLayout

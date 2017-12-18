@@ -8,7 +8,7 @@
     <data>
         <variable
             name="vm"
-            type="com.starter.android.ui.productdetail.ProductDetailsViewModel"/>
+            type="com.happykart.android.ui.productdetail.ProductDetailsViewModel"/>
     </data>
 
     <android.support.design.widget.CoordinatorLayout
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <com.starter.android.ui.custom.CTextView
+                    <com.happykart.android.ui.custom.CTextView
                         tools:text="Xiaomi Mi A1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp">
 
-                        <com.starter.android.ui.custom.CTextView
+                        <com.happykart.android.ui.custom.CTextView
                             tools:text="Rs 20,000"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
                                 android:layout_width="15dp"
                                 android:layout_height="15dp" />
 
-                            <com.starter.android.ui.custom.CTextView
+                            <com.happykart.android.ui.custom.CTextView
                                 android:text="Hot Deal !"
                                 android:textColor="#f44336"
                                 android:layout_width="wrap_content"
