@@ -1,12 +1,12 @@
-package com.happykart.android.ui.productdetail;
+package com.jspham.happykart.android.ui.productdetail;
 
 import android.databinding.ObservableField;
 
-import com.happykart.android.data.repos.CartRepository;
-import com.happykart.android.data.repos.CatalogRepository;
-import com.happykart.android.model.CartEntry;
-import com.happykart.android.model.Product;
-import com.happykart.android.util.ToastUtil;
+import com.jspham.happykart.android.data.repos.CartRepository;
+import com.jspham.happykart.android.data.repos.CatalogRepository;
+import com.jspham.happykart.android.model.CartEntry;
+import com.jspham.happykart.android.model.Product;
+import com.jspham.happykart.android.util.ToastUtil;
 
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;

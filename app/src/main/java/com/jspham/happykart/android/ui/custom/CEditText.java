@@ -1,11 +1,11 @@
-package com.happykart.android.ui.custom;
+package com.jspham.happykart.android.ui.custom;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
-import com.happykart.android.R;
+import com.jspham.happykart.android.R;
 
 public class CEditText extends AppCompatEditText {
 

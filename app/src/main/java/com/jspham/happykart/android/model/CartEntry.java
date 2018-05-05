@@ -1,4 +1,4 @@
-package com.happykart.android.model;
+package com.jspham.happykart.android.model;
 
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;

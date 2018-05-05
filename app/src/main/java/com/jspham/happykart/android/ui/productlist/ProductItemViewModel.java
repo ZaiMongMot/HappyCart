@@ -1,9 +1,7 @@
-package com.happykart.android.ui.productlist;
-
+package com.jspham.happykart.android.ui.productlist;
 
 import android.arch.lifecycle.ViewModel;
-
-import com.happykart.android.model.Product;
+import com.jspham.happykart.android.model.Product;
 
 public class ProductItemViewModel extends ViewModel{
 

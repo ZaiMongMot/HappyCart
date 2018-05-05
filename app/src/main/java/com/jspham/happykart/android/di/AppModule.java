@@ -1,4 +1,4 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
 
 import android.app.Application;
 import android.content.Context;

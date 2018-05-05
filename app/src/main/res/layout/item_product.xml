@@ -7,7 +7,7 @@
     <data>
         <variable
             name="vm"
-            type="com.happykart.android.ui.productlist.ProductItemViewModel"/>
+            type="com.jspham.happykart.android.ui.productlist.ProductItemViewModel"/>
     </data>
 
     <android.support.v7.widget.CardView
@@ -38,7 +38,7 @@
                 android:layout_marginLeft="15dp"
                 android:orientation="vertical">
 
-                <com.happykart.android.ui.custom.CTextView
+                <com.jspham.happykart.android.ui.custom.CTextView
                     android:text="@{vm.product.name}"
                     tools:text="Xiomi MI A1"
                     android:textSize="18sp"
@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
-                <com.happykart.android.ui.custom.CTextView
+                <com.jspham.happykart.android.ui.custom.CTextView
                     android:text="@{vm.price}"
                     tools:text="Rs 20,000"
                     android:textSize="14sp"
@@ -68,7 +68,7 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp" />
 
-                    <com.happykart.android.ui.custom.CTextView
+                    <com.jspham.happykart.android.ui.custom.CTextView
                         android:text="Hot Deal !"
                         android:textColor="#f44336"
                         android:layout_width="wrap_content"

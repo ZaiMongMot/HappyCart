@@ -1,4 +1,4 @@
-package com.happykart.android.ui.main;
+package com.jspham.happykart.android.ui.main;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,10 +10,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.happykart.android.R;
-import com.happykart.android.data.repos.CartRepository;
-import com.happykart.android.di.ActivityComponent;
-import com.happykart.android.util.ActivityRouter;
+import com.jspham.happykart.android.R;
+import com.jspham.happykart.android.data.repos.CartRepository;
+import com.jspham.happykart.android.di.ActivityComponent;
+import com.jspham.happykart.android.util.ActivityRouter;
 
 import javax.inject.Inject;
 

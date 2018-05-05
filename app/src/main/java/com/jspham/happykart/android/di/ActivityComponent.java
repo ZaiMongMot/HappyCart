@@ -1,11 +1,11 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
 
 import android.app.Activity;
 
-import com.happykart.android.App;
-import com.happykart.android.ui.main.MainActivity;
-import com.happykart.android.ui.productdetail.ProductDetailActivity;
-import com.happykart.android.ui.productlist.ProductListActivity;
+import com.jspham.happykart.android.App;
+import com.jspham.happykart.android.ui.main.MainActivity;
+import com.jspham.happykart.android.ui.productdetail.ProductDetailActivity;
+import com.jspham.happykart.android.ui.productlist.ProductListActivity;
 
 import dagger.Subcomponent;
 

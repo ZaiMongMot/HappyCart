@@ -1,4 +1,4 @@
-package com.happykart.android;
+package com.jspham.happykart.android;
 
 
 import android.content.Context;
@@ -7,8 +7,8 @@ import android.util.Log;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.backends.okhttp3.OkHttpImagePipelineConfigFactory;
-import com.happykart.android.di.AppComponent;
-import com.happykart.android.util.Foreground;
+import com.jspham.happykart.android.di.AppComponent;
+import com.jspham.happykart.android.util.Foreground;
 
 import java.io.IOException;
 

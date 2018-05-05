@@ -1,9 +1,9 @@
-package com.happykart.android.data;
+package com.jspham.happykart.android.data;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.happykart.android.BuildConfig;
+import com.jspham.happykart.android.BuildConfig;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

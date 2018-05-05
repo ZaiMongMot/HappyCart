@@ -1,9 +1,9 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
 
 import android.app.Activity;
 import android.content.Context;
 
-import com.happykart.android.util.ActivityRouter;
+import com.jspham.happykart.android.util.ActivityRouter;
 
 import dagger.Module;
 import dagger.Provides;

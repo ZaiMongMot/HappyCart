@@ -1,8 +1,9 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
+
 import android.content.Context;
 
-import com.happykart.android.data.Prefs;
-import com.happykart.android.data.local.LocalRealmDB;
+import com.jspham.happykart.android.data.Prefs;
+import com.jspham.happykart.android.data.local.LocalRealmDB;
 
 import javax.inject.Singleton;
 

@@ -1,11 +1,11 @@
-package com.happykart.android.ui.productlist;
+package com.jspham.happykart.android.ui.productlist;
 
 import android.arch.lifecycle.ViewModel;
 import android.databinding.ObservableField;
 
 
-import com.happykart.android.data.repos.CatalogRepository;
-import com.happykart.android.model.Product;
+import com.jspham.happykart.android.data.repos.CatalogRepository;
+import com.jspham.happykart.android.model.Product;
 
 import java.util.List;
 

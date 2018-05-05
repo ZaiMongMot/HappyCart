@@ -1,7 +1,4 @@
-package com.happykart.android.ui.custom;
-
-
-
+package com.jspham.happykart.android.ui.custom;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.happykart.android.R;
+import com.jspham.happykart.android.R;
 
 
 public class FlowLayout extends ViewGroup {

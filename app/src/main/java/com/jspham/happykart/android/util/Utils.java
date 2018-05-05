@@ -1,4 +1,4 @@
-package com.happykart.android.util;
+package com.jspham.happykart.android.util;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -35,9 +35,9 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.happykart.android.R;
-import com.happykart.android.ui.custom.ClickSpan;
-import com.happykart.android.ui.custom.RoundedBackgroundSpan;
+import com.jspham.happykart.android.R;
+import com.jspham.happykart.android.ui.custom.ClickSpan;
+import com.jspham.happykart.android.ui.custom.RoundedBackgroundSpan;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

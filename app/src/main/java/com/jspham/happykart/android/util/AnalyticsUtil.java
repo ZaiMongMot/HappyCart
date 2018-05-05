@@ -1,4 +1,4 @@
-package com.happykart.android.util;
+package com.jspham.happykart.android.util;
 
 /**
  * Created by Ashutosh Verma on 14-Jul-17.

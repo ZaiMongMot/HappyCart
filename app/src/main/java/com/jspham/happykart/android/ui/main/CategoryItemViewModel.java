@@ -1,9 +1,7 @@
-package com.happykart.android.ui.main;
-
+package com.jspham.happykart.android.ui.main;
 
 import android.arch.lifecycle.ViewModel;
-
-import com.happykart.android.model.Category;
+import com.jspham.happykart.android.model.Category;
 
 public class CategoryItemViewModel extends ViewModel{
 

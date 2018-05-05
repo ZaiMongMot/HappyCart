@@ -1,4 +1,4 @@
-package com.happykart.android.ui.productlist;
+package com.jspham.happykart.android.ui.productlist;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -7,11 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.happykart.android.R;
-import com.happykart.android.databinding.ActivityProductListBinding;
-import com.happykart.android.di.ActivityComponent;
-import com.happykart.android.model.Product;
-import com.happykart.android.util.ActivityRouter;
+import com.jspham.happykart.android.R;
+import com.jspham.happykart.android.databinding.ActivityProductListBinding;
+import com.jspham.happykart.android.di.ActivityComponent;
+import com.jspham.happykart.android.model.Product;
+import com.jspham.happykart.android.util.ActivityRouter;
 
 import javax.inject.Inject;
 

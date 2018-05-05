@@ -1,11 +1,11 @@
-package com.happykart.android.ui.main;
+package com.jspham.happykart.android.ui.main;
 
 import android.arch.lifecycle.ViewModel;
 import android.databinding.ObservableArrayList;
 import android.databinding.ObservableList;
 
-import com.happykart.android.data.repos.CatalogRepository;
-import com.happykart.android.model.Category;
+import com.jspham.happykart.android.data.repos.CatalogRepository;
+import com.jspham.happykart.android.model.Category;
 
 import javax.inject.Inject;
 

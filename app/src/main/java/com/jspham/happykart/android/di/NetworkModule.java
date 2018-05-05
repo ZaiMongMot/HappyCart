@@ -1,11 +1,11 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
 
 
 import android.content.Context;
 
-import com.happykart.android.BuildConfig;
-import com.happykart.android.data.remote.APIService;
-import com.happykart.android.util.Constants;
+import com.jspham.happykart.android.BuildConfig;
+import com.jspham.happykart.android.data.remote.APIService;
+import com.jspham.happykart.android.util.Constants;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;

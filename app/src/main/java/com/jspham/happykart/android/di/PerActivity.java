@@ -1,4 +1,4 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

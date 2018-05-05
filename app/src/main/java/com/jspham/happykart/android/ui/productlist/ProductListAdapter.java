@@ -1,14 +1,14 @@
-package com.happykart.android.ui.productlist;
+package com.jspham.happykart.android.ui.productlist;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.happykart.android.R;
-import com.happykart.android.databinding.ItemProductBinding;
-import com.happykart.android.model.Product;
-import com.happykart.android.util.ActivityRouter;
+import com.jspham.happykart.android.R;
+import com.jspham.happykart.android.databinding.ItemProductBinding;
+import com.jspham.happykart.android.model.Product;
+import com.jspham.happykart.android.util.ActivityRouter;
 
 import io.realm.RealmResults;
 

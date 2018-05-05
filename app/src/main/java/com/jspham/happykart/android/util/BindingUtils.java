@@ -1,4 +1,4 @@
-package com.happykart.android.util;
+package com.jspham.happykart.android.util;
 
 import android.databinding.BindingAdapter;
 import android.net.Uri;
@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
-import com.happykart.android.R;
+import com.jspham.happykart.android.R;
 
 
 public class BindingUtils {

@@ -1,7 +1,7 @@
-package com.happykart.android.data.local;
+package com.jspham.happykart.android.data.local;
 
-import com.happykart.android.model.CartEntry;
-import com.happykart.android.model.Product;
+import com.jspham.happykart.android.model.CartEntry;
+import com.jspham.happykart.android.model.Product;
 
 import java.util.List;
 
@@ -40,14 +40,19 @@ public class LocalRealmDB {
     }
 
     public void addToCart(final long id) {
-        realm.executeTransactionAsync(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                CartEntry cartEntry = new CartEntry();
-                cartEntry.setProductId(id);
-                realm.copyToRealmOrUpdate(cartEntry);
-            }
+        realm.executeTransactionAsync(realm -> {
+            CartEntry cartEntry = new CartEntry();
+            cartEntry.setProductId(id);
+            realm.copyToRealmOrUpdate(cartEntry);
         });
+//        new Realm.Transaction() {
+//            @Override
+//            public void execute(Realm realm) {
+//                CartEntry cartEntry = new CartEntry();
+//                cartEntry.setProductId(id);
+//                realm.copyToRealmOrUpdate(cartEntry);
+//            }
+//        });
     }
 
     public long getCartCount() {

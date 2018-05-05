@@ -1,16 +1,16 @@
-package com.happykart.android.ui.productdetail;
+package com.jspham.happykart.android.ui.productdetail;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 
-import com.happykart.android.R;
-import com.happykart.android.data.repos.CartRepository;
-import com.happykart.android.data.repos.CatalogRepository;
-import com.happykart.android.databinding.ActivityProductDetailBinding;
-import com.happykart.android.di.ActivityComponent;
-import com.happykart.android.util.ToastUtil;
+import com.jspham.happykart.android.R;
+import com.jspham.happykart.android.data.repos.CartRepository;
+import com.jspham.happykart.android.data.repos.CatalogRepository;
+import com.jspham.happykart.android.databinding.ActivityProductDetailBinding;
+import com.jspham.happykart.android.di.ActivityComponent;
+import com.jspham.happykart.android.util.ToastUtil;
 
 import javax.inject.Inject;
 

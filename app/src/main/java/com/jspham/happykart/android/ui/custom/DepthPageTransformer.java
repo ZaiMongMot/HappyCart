@@ -1,4 +1,4 @@
-package com.happykart.android.ui.custom;
+package com.jspham.happykart.android.ui.custom;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

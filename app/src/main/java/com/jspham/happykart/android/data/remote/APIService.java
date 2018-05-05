@@ -1,7 +1,7 @@
-package com.happykart.android.data.remote;
+package com.jspham.happykart.android.data.remote;
 
-import com.happykart.android.data.remote.model.ProductListResponse;
-import com.happykart.android.data.remote.model.ProductResponse;
+import com.jspham.happykart.android.data.remote.model.ProductListResponse;
+import com.jspham.happykart.android.data.remote.model.ProductResponse;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

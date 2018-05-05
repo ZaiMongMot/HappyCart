@@ -1,8 +1,8 @@
-package com.happykart.android.data.repos;
+package com.jspham.happykart.android.data.repos;
 
 
-import com.happykart.android.data.local.LocalRealmDB;
-import com.happykart.android.model.CartEntry;
+import com.jspham.happykart.android.data.local.LocalRealmDB;
+import com.jspham.happykart.android.model.CartEntry;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

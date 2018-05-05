@@ -1,4 +1,4 @@
-package com.happykart.android.util;
+package com.jspham.happykart.android.util;
 
 import android.content.Context;
 import android.view.Gravity;

@@ -1,4 +1,4 @@
-package com.happykart.android.ui.custom;
+package com.jspham.happykart.android.ui.custom;
 
 /**
  * Created by Ashutosh Verma on 15-09-2016.

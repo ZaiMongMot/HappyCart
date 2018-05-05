@@ -1,4 +1,4 @@
-package com.happykart.android.ui.base;
+package com.jspham.happykart.android.ui.base;
 
 import android.databinding.ViewDataBinding;
 import android.support.v7.widget.RecyclerView;

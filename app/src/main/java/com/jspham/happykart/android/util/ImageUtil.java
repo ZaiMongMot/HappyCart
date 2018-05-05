@@ -1,4 +1,4 @@
-package com.happykart.android.util;
+package com.jspham.happykart.android.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,8 +22,8 @@ import com.facebook.imagepipeline.common.RotationOptions;
 import com.facebook.imagepipeline.core.ImagePipeline;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
-import com.happykart.android.model.PhotoResizeResult;
-import com.happykart.android.model.PhotoSize;
+import com.jspham.happykart.android.model.PhotoResizeResult;
+import com.jspham.happykart.android.model.PhotoSize;
 
 import org.apache.commons.io.FileUtils;
 

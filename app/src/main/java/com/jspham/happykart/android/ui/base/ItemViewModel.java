@@ -1,4 +1,4 @@
-package com.happykart.android.ui.base;
+package com.jspham.happykart.android.ui.base;
 
 import android.arch.lifecycle.ViewModel;
 

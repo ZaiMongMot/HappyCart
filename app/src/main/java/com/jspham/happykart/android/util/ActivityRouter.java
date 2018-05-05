@@ -1,11 +1,11 @@
-package com.happykart.android.util;
+package com.jspham.happykart.android.util;
 
 
 import android.app.Activity;
 import android.content.Intent;
 
-import com.happykart.android.ui.productdetail.ProductDetailActivity;
-import com.happykart.android.ui.productlist.ProductListActivity;
+import com.jspham.happykart.android.ui.productdetail.ProductDetailActivity;
+import com.jspham.happykart.android.ui.productlist.ProductListActivity;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

@@ -1,6 +1,6 @@
-package com.happykart.android.data.remote.model;
+package com.jspham.happykart.android.data.remote.model;
 
-import com.happykart.android.model.Product;
+import com.jspham.happykart.android.model.Product;
 
 
 public class ProductResponse {

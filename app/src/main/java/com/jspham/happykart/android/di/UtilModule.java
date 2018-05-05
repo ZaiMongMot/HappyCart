@@ -1,10 +1,10 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
 
 import android.content.Context;
 
-import com.happykart.android.util.ImageUtil;
-import com.happykart.android.util.ToastUtil;
-import com.happykart.android.util.Utils;
+import com.jspham.happykart.android.util.ImageUtil;
+import com.jspham.happykart.android.util.ToastUtil;
+import com.jspham.happykart.android.util.Utils;
 
 import javax.inject.Singleton;
 

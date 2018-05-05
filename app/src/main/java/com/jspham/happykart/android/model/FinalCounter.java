@@ -1,4 +1,4 @@
-package com.happykart.android.model;
+package com.jspham.happykart.android.model;
 
 
 public class FinalCounter {

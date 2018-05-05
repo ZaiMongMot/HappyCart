@@ -1,8 +1,8 @@
-package com.happykart.android.di;
+package com.jspham.happykart.android.di;
 
 import android.app.Application;
 
-import com.happykart.android.App;
+import com.jspham.happykart.android.App;
 
 import javax.inject.Singleton;
 

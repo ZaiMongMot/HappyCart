@@ -1,4 +1,4 @@
-package com.happykart.android.ui.custom;
+package com.jspham.happykart.android.ui.custom;
 
 import android.graphics.Color;
 import android.os.Handler;
@@ -6,7 +6,7 @@ import android.text.TextPaint;
 import android.text.style.ClickableSpan;
 import android.view.View;
 
-import com.happykart.android.util.ClickListener;
+import com.jspham.happykart.android.util.ClickListener;
 
 
 /**

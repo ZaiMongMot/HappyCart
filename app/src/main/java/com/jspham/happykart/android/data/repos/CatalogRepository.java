@@ -1,12 +1,12 @@
-package com.happykart.android.data.repos;
+package com.jspham.happykart.android.data.repos;
 
-import com.happykart.android.R;
-import com.happykart.android.data.local.LocalRealmDB;
-import com.happykart.android.data.remote.APIService;
-import com.happykart.android.data.remote.model.ProductListResponse;
-import com.happykart.android.data.remote.model.ProductResponse;
-import com.happykart.android.model.Category;
-import com.happykart.android.model.Product;
+import com.jspham.happykart.android.R;
+import com.jspham.happykart.android.data.local.LocalRealmDB;
+import com.jspham.happykart.android.data.remote.APIService;
+import com.jspham.happykart.android.data.remote.model.ProductListResponse;
+import com.jspham.happykart.android.data.remote.model.ProductResponse;
+import com.jspham.happykart.android.model.Category;
+import com.jspham.happykart.android.model.Product;
 
 import java.util.ArrayList;
 import java.util.Collections;
